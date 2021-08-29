@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LifeCycle</string>
+    <string name="title_activity_android_views_in_compose">AndroidViewsInComposeActivity</string>
+    <string name="title_activity_brocast_receiver">BrocastReceiverActivity</string>
 </resources>

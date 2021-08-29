@@ -1,4 +1,4 @@
-package com.hsjiang.lifecycle
+package com.hsjiang.lifecycle.compose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,9 +8,10 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.hsjiang.lifecycle.ui.theme.LifeCycleTheme
+import com.hsjiang.lifecycle.compose.ui.theme.LifeCycleTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,8 +31,11 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun Greeting(name: String, viewModel: MainViewModel = MainViewModel()) {
+    val uiState = viewModel.uiState.collectAsState()
+
     Text(text = "Hello $name!")
+
 }
 
 @Preview(showBackground = true)

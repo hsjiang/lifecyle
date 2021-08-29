@@ -10,7 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeCycle">
         <activity
-            android:name=".MainActivity"
+            android:name=".compose.receiver.BroadcastReceiverActivity"
+            android:exported="true"
+            android:label="@string/title_activity_brocast_receiver"
+            android:theme="@style/Theme.LifeCycle" />
+        <activity
+            android:name=".compose.AndroidViewsInComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_android_views_in_compose"
+            android:theme="@style/Theme.LifeCycle" />
+        <activity
+            android:name=".origin.ComposeInAndroidViewsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".compose.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.LifeCycle">

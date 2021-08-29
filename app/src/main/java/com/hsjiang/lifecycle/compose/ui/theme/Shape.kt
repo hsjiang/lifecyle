@@ -1,4 +1,4 @@
-package com.hsjiang.lifecycle.ui.theme
+package com.hsjiang.lifecycle.compose.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
